@@ -1,0 +1,12 @@
+<app-header></app-header>
+<app-nav></app-nav>
+<router-outlet></router-outlet>
+
+<ng-select>
+    <ng-option *ngFor="let record of records" [value]="record.id">{{record.email}}</ng-option>
+</ng-select>
+<app-footer></app-footer>
+
+<button (click)="getData()">
+    Get Data
+</button>
