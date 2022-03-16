@@ -1,6 +1,5 @@
 
 import { Component, OnInit } from '@angular/core';
-import { DataServiceService } from '../data-service.service';
 
 @Component({
   selector: 'app-nav',
@@ -9,13 +8,9 @@ import { DataServiceService } from '../data-service.service';
 })
 export class NavComponent implements OnInit {
 
-  constructor(private data1: DataServiceService) { }
+  constructor( ) { }
   record1: any;
   ngOnInit(): void {
   }
-  clickFumction() {
-    //this.data1.getRecords();
-    this.record1 = this.data1.records
-
-  }
+ 
 }

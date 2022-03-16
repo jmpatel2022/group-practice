@@ -1,7 +1,8 @@
 <app-header></app-header>
 <app-nav></app-nav>
+<div class ="container">
 <router-outlet></router-outlet>
-
+</div>
 <ng-select>
     <ng-option *ngFor="let record of records" [value]="record.id">{{record.email}}</ng-option>
 </ng-select>

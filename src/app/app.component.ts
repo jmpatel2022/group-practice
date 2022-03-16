@@ -24,12 +24,10 @@ export class AppComponent implements OnDestroy, OnInit {
   ];
 
   public getData() {
-    this.dataInfo = this.dataService.getRecords('/comments').subscribe((data) => {
+    this.dataInfo = this.dataService.getRecords('/comments').subscribe ((data) => {
       this.records = data;
       console.log(this.records)
-    }, ((error: HttpErrorResponse) => {
-      console.log(error.status)
-    }));
+        });
   }
 
 

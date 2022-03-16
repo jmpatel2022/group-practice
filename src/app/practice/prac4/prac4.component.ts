@@ -19,10 +19,13 @@ export class Prac4Component implements OnInit {
   }
   test1Function() {
 
-    // this.multi.getRecords()
-    this.record1 = this.multi.records
-
+    this.multi.getRecords("/users").subscribe((data)=>{
+      this.record1 = data;
+      console.log(data);
+    })
   }
+
+
   deleteRecord(record: any) {
     let i = this.record1.indexOf(record);
     this.record1.splice(i, 1)
