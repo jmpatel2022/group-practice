@@ -13,7 +13,7 @@ export class Prac4Component implements OnInit {
   ngOnInit(): void {
   }
   record1: any;
-  name: string = "jyoti";
+  name: string = "DATA";
   pracFunction() {
     this.multi.testFunction(3, 5)
   }

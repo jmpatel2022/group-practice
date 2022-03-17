@@ -23,20 +23,20 @@ export class AppComponent implements OnDestroy, OnInit {
     { id: 4, name: 'Audi' },
   ];
 
-  public getData() {
-    this.dataInfo = this.dataService.getRecords('/comments').subscribe ((data) => {
-      this.records = data;
-      console.log(this.records)
-        });
-  }
+  // public getData() {
+  //   this.dataInfo = this.dataService.getRecords('/comments').subscribe ((data) => {
+  //     this.records = data;
+  //     console.log(this.records)
+  //       });
+  // }
 
 
   ngOnInit(): void {
-    this.getData();
+    // this.getData();
   }
 
   ngOnDestroy(): void {
-    this.dataInfo.unsubscribe();
+    // this.dataInfo.unsubscribe();
   }
 
 

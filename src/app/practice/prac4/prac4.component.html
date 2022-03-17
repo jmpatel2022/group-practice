@@ -3,8 +3,19 @@
 
 
 <button (click)="test1Function()"> Get Records</button> <br><br>
-<table>
-    <h1 style="text-align: center;">{{name}}</h1>
+<ng-select>
+    <ng-option *ngFor="let record of record1" [value]="record.id">{{record.email}}</ng-option>
+</ng-select>
+<div class="row">
+    <div class="col-md-1"></div>
+<table class="col-md-10 center">
+    <tr class="text-center" >
+        <td colspan="5">
+            <h1>DATA</h1>
+        </td>
+    </tr>
+    
+    <!-- <h1 class="center">{{name}}</h1> -->
     <tr>
         <th> Name </th>
         <th> Id</th>
@@ -20,3 +31,5 @@
         <td> <button (click)="deleteRecord(record)"> Delete</button></td>
     </tr>
 </table>
+<div class="col-md-1"></div>
+</div>

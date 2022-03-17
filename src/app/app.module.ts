@@ -19,6 +19,7 @@ import { DataServiceService } from './data-service.service';
 import { HttpClientModule } from '@angular/common/http';
 import { NgSelectModule } from '@ng-select/ng-select';
 import { FormsModule } from '@angular/forms';
+import { LoginComponent } from './login/login.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +34,8 @@ import { FormsModule } from '@angular/forms';
     Prac3Component,
     NotFoundComponent,
     AboutComponent,
-    Prac4Component
+    Prac4Component,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
